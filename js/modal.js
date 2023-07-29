@@ -5,12 +5,12 @@ let modal = () => {
    let searchInput = modal.querySelector('#search-input');
 
    modalBtn.addEventListener('click', () => {
-      modal.style.display = 'block';
+      modal.classList.add('active');
       searchInput.focus();
    });
 
    modalClose.addEventListener('click', () => {
-      modal.style.display = 'none';
+      modal.classList.remove('active');
       searchInput.value = '';
    });
 
