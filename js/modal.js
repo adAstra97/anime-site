@@ -13,7 +13,7 @@ const modal = () => {
 
       items.forEach(item => {
          wrapper.insertAdjacentHTML('afterbegin', `
-            <a class="p-2" href="/anime-details.html" target="_blank">${item.title}</a>
+            <a class="p-2" href="./anime-details.html" target="_blank">${item.title}</a>
          `);
       });
    }
